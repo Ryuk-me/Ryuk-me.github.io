@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #777;
+    padding: 30px;
+}
+
+.header {
+    height: 95vh;
+    background-image: linear-gradient( to right bottom, #03ffd56c, #c816f588), url(bg1-2.jpg);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    /* clip-path: polygon(x y, x y,x y,x y); */
+    clip-path: polygon(0 0, 100% 0%, 100% 79%, 0% 100%);
+}
+
+.logo-box {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+.logo {
+    height: 35px;
+}
+
+.text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    /*to make text middle*/
+}
+
+.heading-primary {
+    color: white;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    /*text jo uper ho jata thik ho*/
+    margin-bottom: 60px;
+}
+
+.heading-primary-main {
+    display: block;
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 35px;
+    animation: moveinleft;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+}
+
+.heading-primary-sub {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 19.3px;
+    animation-name: moveinright;
+    animation-duration: 2s;
+}
+
+@keyframes moveinleft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+        /*negtive goes left*/
+    }
+    80% {
+        transform: translateX(10px);
+        /*aage jaa ke piche aayega*/
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveinright {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+        /*Positive goes right*/
+    }
+    80% {
+        transform: translateX(-10px)/*aage jaa ke piche aayega but in right*/
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveinbutton {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+        /*Positive goes right*/
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+.btn:link, .bnt:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: relative;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+}
+
+.btn-white {
+    background-color: #fff;
+    color: #777;
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn-white::after {
+    background-color: white;
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.btn-ani {
+    animation-name: moveinbutton;
+    animation-duration: .5s;
+    animation-delay: .75s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+}
+
+/* .btn:hover{
+    color: brown;
+    background-color:rgba(226, 15, 226, 0.548);
+} */
