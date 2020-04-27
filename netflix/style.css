@@ -33,6 +33,7 @@ body {
     left: 60px;
     animation-name: moveinright;
     animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .logo {
