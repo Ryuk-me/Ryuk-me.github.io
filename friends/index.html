@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script>
+        function light(sw) {
+            var pic;
+            if (sw == 0) {
+                pic = "start.gif"
+            } else {
+                pic = "end.gif"
+            }
+            document.getElementById('myImage').src = pic;
+        }
+    </script>
+
+    <img id="myImage" src="start.gif" width="200" height="180">
+
+    <p>
+        <button type="button" onclick="light(1)">ON</button>
+        <button type="button" onclick="light(0)">OFF</button>
+    </p>
+
+</body>
+
+</html>
