@@ -88,7 +88,7 @@ h1 {
     overflow: hidden;
     /* border: 5px solid black; */
     transition: all 0.6s;
-    cursor:pointer;
+    
 }
 
 .profile img:hover {
@@ -96,6 +96,7 @@ h1 {
     height: 10%;
     transform: scale(1.1);
     box-shadow: 5px 5px 5px rgb(15, 15, 15);
+    cursor: pointer;
 }
 
 .skill-row {
