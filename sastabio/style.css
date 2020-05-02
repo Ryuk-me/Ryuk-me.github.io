@@ -108,15 +108,15 @@ h1 {
     height: 10%;
     border-radius: 80%;
     transition: all 1s;
-    margin-bottom: 50px
+    margin-bottom: 50px;
+    cursor: pointer;   
 }
 
 .skill-row img:hover {
     width: 300px;
     border-radius: 0;
     transform: scale(1.1);
-    box-shadow: 5px 5px 10px #525050;
-    cursor: pointer;
+    box-shadow: 5px 5px 10px #525050; 
 }
 
 .twitter,
