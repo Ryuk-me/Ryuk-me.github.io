@@ -108,8 +108,7 @@ h1 {
     height: 10%;
     border-radius: 80%;
     transition: all 1s;
-    margin-bottom: 50px;
-    cursor: pointer;   
+    margin-bottom: 50px; 
 }
 
 .skill-row img:hover {
@@ -117,12 +116,14 @@ h1 {
     border-radius: 0;
     transform: scale(1.1);
     box-shadow: 5px 5px 10px #525050; 
+    cursor: pointer;  
 }
 
 .twitter,
 .insta,
 .btn-mail {
     text-decoration: none;
+    cursor: pointer;  
 
 }
 
