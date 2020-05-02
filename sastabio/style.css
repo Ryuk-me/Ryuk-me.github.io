@@ -88,6 +88,7 @@ h1 {
     overflow: hidden;
     /* border: 5px solid black; */
     transition: all 0.6s;
+    cursor:pointer;
 }
 
 .profile img:hover {
