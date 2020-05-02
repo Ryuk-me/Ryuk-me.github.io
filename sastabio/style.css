@@ -116,6 +116,7 @@ h1 {
     border-radius: 0;
     transform: scale(1.1);
     box-shadow: 5px 5px 10px #525050;
+    cursor: pointer;
 }
 
 .twitter,
