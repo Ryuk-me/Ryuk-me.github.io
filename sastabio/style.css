@@ -122,8 +122,7 @@ h1 {
 .btn-mail:hover,
 .insta:hover,
 .twitter:hover {
-    width: 40px;
-    height: 40px;
+    transform: scale(1.1);
 }
 
 .word-space {
@@ -136,6 +135,13 @@ hr {
     height: 1px;
     background-color: rgb(0, 0, 0);
     width: 25%;
+}
+
+footer {
+    text-transform: capitalize;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 0;
 }
 
 @keyframes anime1 {
