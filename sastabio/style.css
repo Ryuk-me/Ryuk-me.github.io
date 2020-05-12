@@ -29,7 +29,6 @@ h1 {
     padding-top: 60px;
     font-weight: bold;
     margin-bottom: 100px;
-
 }
 
 .top-cld {
@@ -38,7 +37,6 @@ h1 {
     animation: movecloudtop;
     animation-duration: 12s;
     animation-iteration-count: infinite;
-
 }
 
 .btm-cld {
@@ -46,7 +44,6 @@ h1 {
     animation: movecloudbtm;
     animation-duration: 12s;
     animation-iteration-count: infinite;
-
 }
 
 .pro {
@@ -76,14 +73,13 @@ h1 {
     letter-spacing: 1rem;
     color: rgb(0, 119, 255);
     margin-bottom: 100px;
-
 }
 
 .profile img {
     position: relative;
     margin-top: 2%;
-    width: 13%;
-    height: 8%;
+    width: 200px;
+    height: 200px;
     border-radius: 80%;
     overflow: hidden;
     /* border: 5px solid black; */
@@ -91,10 +87,10 @@ h1 {
 }
 
 .profile img:hover {
-    width: 15%;
-    height: 10%;
+    height: 20%;
     transform: scale(1.1);
     box-shadow: 5px 5px 5px rgb(15, 15, 15);
+    cursor: pointer;
 }
 
 .skill-row {
@@ -102,25 +98,40 @@ h1 {
 }
 
 .skill-row img {
-    width: 15%;
-    height: 10%;
-    border-radius: 80%;
+    /* width: 180px; */
+    height: 170px;
+    border-radius: 35%;
     transition: all 1s;
-    margin-bottom: 50px
+    margin-bottom: 25px;
+    cursor: pointer;
 }
 
 .skill-row img:hover {
-    width: 300px;
+    width: 250px;
     border-radius: 0;
     transform: scale(1.1);
     box-shadow: 5px 5px 10px #525050;
 }
 
-.twitter,
+
+/* .twitter,
 .insta,
 .btn-mail {
     text-decoration: none;
+} */
 
+.btn-mail,
+.insta,
+.twitter {
+    width: 40px;
+    height: 35px;
+}
+
+.btn-mail:hover,
+.insta:hover,
+.twitter:hover {
+    width: 40px;
+    height: 40px;
 }
 
 .word-space {
@@ -128,40 +139,35 @@ h1 {
     line-height: 1.5em;
 }
 
-.line {
-    margin-right: 20px;
-    border: 1px thick black
+hr {
+    border: none;
+    height: 1px;
+    background-color: rgb(51, 51, 51);
+    width: 25%;
 }
 
 @keyframes anime1 {
     0% {
         color: red;
     }
-
     10% {
         color: black;
     }
-
     20% {
         color: violet;
     }
-
     30% {
         color: rgb(255, 16, 136);
     }
-
     40% {
         color: rgb(231, 4, 252);
     }
-
     50% {
         color: rgba(90, 175, 4, 0.76);
     }
-
     80% {
         color: darkorchid;
     }
-
     100% {
         color: rgba(1, 100, 46, 0.76);
     }
@@ -171,53 +177,42 @@ h1 {
     0% {
         left: 10px;
     }
-
     100% {
         left: 500px;
     }
-
 }
 
 @keyframes movecloudbtm {
     0% {
         left: 10px;
     }
-
     100% {
         left: 500px;
     }
-
 }
 
 @keyframes coders {
     0% {
         color: rgb(243, 160, 7);
     }
-
     10% {
         color: black;
     }
-
     20% {
         color: rgb(255, 0, 0);
     }
-
     30% {
         color: rgba(56, 255, 16, 0.651);
     }
-
     40% {
         color: rgb(231, 4, 252);
     }
-
     50% {
         color: rgba(48, 38, 182, 0.897);
     }
-
     80% {
         color: rgb(25, 230, 195);
     }
-
     100% {
         color: rgba(226, 19, 181, 0.904);
     }
@@ -227,31 +222,24 @@ h1 {
     0% {
         color: rgb(44, 44, 44);
     }
-
     10% {
         color: rgb(197, 238, 16);
     }
-
     20% {
         color: rgb(255, 0, 0);
     }
-
     30% {
         color: rgb(16, 255, 219);
     }
-
     40% {
         color: rgba(4, 252, 74, 0.912);
     }
-
     50% {
         color: rgba(48, 38, 182, 0.897);
     }
-
     80% {
         color: rgb(0, 88, 22);
     }
-
     100% {
         color: rgba(206, 69, 69, 0.904);
     }
