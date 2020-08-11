@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    background-color: white;
+    font-family: Segoe UI;
+}
+
+.nav-links li a {
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0px 5vw 0px 1vw;
+}
+
+.nav-links {
+    background-color: #2c3e50;
+    padding-top: 5.5vh;
+    list-style-type: none;
+    width: auto;
+    height: 15vh;   
+    /* position: sticky; */
+}
+
+.home-container {
+    background-color: #1abc9c;
+    height: 85vh;
+    width: 100%;
+}
+
+
+#avtaar {
+    width: 13vw;
+    margin: 20vh 0px 0px 43vw; 
+    height: 25vh;
+}
+
+#name{
+    color: white;
+    font-weight: bold;
+    font-size: 450%;
+    text-align: center;
+}
+
+.custom-line-box {
+    margin: 1.25rem 0 1.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-line {
+    width: 100%;
+    max-width: 40vw;
+    height: 0.25rem;
+    background-color: white;
+  }
+
+.i-am{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+}
+
