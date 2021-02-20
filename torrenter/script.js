@@ -8,7 +8,8 @@ async function get_torrent() {
 
   const query = document.getElementById("query").value;
   if(query !== ''){
-    const api = "http://torrentsapi-env.eba-5jji23df.ap-south-1.elasticbeanstalk.com/api/" +siteName +"/" +query;
+    // const api = "http://torrentsapi-env.eba-5jji23df.ap-south-1.elasticbeanstalk.com/api/" +siteName +"/" +query;
+    const api = "https://torrent-api-1337x-unofficial.herokuapp.com/"+query;
     
     const html = await axios.get(api);
     const torrents = await html.data;
