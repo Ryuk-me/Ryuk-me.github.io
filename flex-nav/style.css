@@ -26,6 +26,7 @@ body {
 }
 
 
+
 .nav a:hover {
     background: #ffffff;
     transition: all 500ms;
@@ -58,6 +59,7 @@ body {
     .nav li a {
         height: 100%;
     }
+
     .logo a:hover {
         transform: none;
     }
@@ -70,7 +72,12 @@ body {
 
     .nav a {
         text-align: center;
-        box-shadow: 1px 1px 1px rgb(100, 100, 100);
+        box-shadow: 1px 1px 0.6px rgb(100, 100, 100);
     }
+
+    .nav a:last-child:hover {
+        box-shadow: none;
+    }
+
 
 }
