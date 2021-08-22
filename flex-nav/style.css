@@ -1,6 +1,8 @@
 body {
     margin: 0;
-    background: black;
+    padding: 0;
+    background: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .nav {
@@ -11,7 +13,7 @@ body {
     flex-direction: row;
     justify-content: flex-end;
     flex-wrap: row wrap;
-    background: deepskyblue;
+    background: black;
 
 }
 
@@ -23,21 +25,39 @@ body {
     font-size: 1.2rem;
 }
 
+
 .nav a:hover {
-    background: #1565C0;
+    background: #ffffff;
     transition: all 500ms;
+    color: black;
 }
+
+.logo a{
+    position: fixed;
+    left: 0;
+    letter-spacing: 0.2rem;
+    font-family: 'Cinzel', serif;
+}
+
+.logo a:hover{
+   transition-duration: 1s;
+   transform: rotate(-360deg);
+   color: black;
+}
+
 
 @media all and (max-width: 800px) {
     .nav {
-        justify-content: space-around;
+        justify-content: space-between;
+    }
+    .logo a{
+        position: static;
     }
 }
 
 @media all and (max-width: 600px) {
     .nav {
         flex-flow: column wrap;
-        padding: 0;
     }
 
     .nav a {
