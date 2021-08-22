@@ -9,12 +9,11 @@ body {
     list-style: none;
     display: flex;
     flex-direction: row;
-    justify-content: end;
+    justify-content: flex-end;
     flex-wrap: row wrap;
     background: deepskyblue;
 
 }
-
 
 .nav li a {
     display: block;
