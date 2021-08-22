@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    background: black;
+}
+
+.nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    flex-wrap: row wrap;
+    background: deepskyblue;
+
+}
+
+
+.nav li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1em;
+    font-size: 1.2rem;
+}
+
+.nav a:hover {
+    background: #1565C0;
+    transition: all 500ms;
+}
+
+@media all and (max-width: 800px) {
+    .nav {
+        justify-content: space-around;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .nav {
+        flex-flow: column wrap;
+        padding: 0;
+    }
+
+    .nav a {
+        text-align: center;
+        box-shadow: 1px 1px 1px rgb(100, 100, 100);
+    }
+
+}
