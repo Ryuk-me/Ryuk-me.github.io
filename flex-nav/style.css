@@ -32,17 +32,17 @@ body {
     color: black;
 }
 
-.logo a{
+.logo a {
     position: fixed;
     left: 0;
     letter-spacing: 0.2rem;
     font-family: 'Cinzel', serif;
 }
 
-.logo a:hover{
-   transition-duration: 1s;
-   transform: rotate(-360deg);
-   color: black;
+.logo a:hover {
+    transition-duration: 1s;
+    transform: rotate(-360deg);
+    color: black;
 }
 
 
@@ -50,8 +50,16 @@ body {
     .nav {
         justify-content: space-between;
     }
-    .logo a{
+
+    .logo a {
         position: static;
+    }
+
+    .nav li a {
+        height: 100%;
+    }
+    .logo a:hover {
+        transform: none;
     }
 }
 
